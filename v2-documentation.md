@@ -1,14 +1,14 @@
 # Documentation
 
-All PancakeSwap pairs consist of two different tokens. BNB is not a native currency in PancakeSwap, and is represented only by WBNB in the pairs. 
+All ExtendSwap pairs consist of two different tokens. BNB is not a native currency in ExtendSwap, and is represented only by WBNB in the pairs. 
 
-The canonical WBNB address used by the PancakeSwap interface is `0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c`.
+The canonical WBNB address used by the ExtendSwap interface is `0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c`.
 
 Results are cached for 5 minutes (or 300 seconds).
 
 ## [`/api/summary`](https://api-extendswap.vercel.app/api/summary)
 
-Returns data for the top ~1000 PancakeSwap pairs, sorted by reserves. 
+Returns data for the top ~1000 ExtendSwap pairs, sorted by reserves. 
 
 ### Request
 
@@ -34,7 +34,7 @@ Returns data for the top ~1000 PancakeSwap pairs, sorted by reserves.
 
 ## [`/api/tokens`](https://api-extendswap.vercel.app/api/tokens)
 
-Returns the tokens in the top ~1000 pairs on PancakeSwap, sorted by reserves.
+Returns the tokens in the top ~1000 pairs on ExtendSwap, sorted by reserves.
 
 ### Request
 
@@ -81,7 +81,7 @@ Returns the token information, based on address.
 
 ## [`/api/pairs`](https://api-extendswap.vercel.app/api/pairs)
 
-Returns data for the top ~1000 PancakeSwap pairs, sorted by reserves.
+Returns data for the top ~1000 ExtendSwap pairs, sorted by reserves.
 
 ### Request
 
