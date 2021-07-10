@@ -111,3 +111,26 @@ Returns data for the top ~1000 ExtendSwap pairs, sorted by reserves.
   }
 }
 ```
+
+## [`/api/volume`](https://api-extendswap.vercel.app/api/volume)
+
+Returns volume data for the top ~1000 ExtendSwap pairs.
+
+### Request
+
+`GET https://api-extendswap.vercel.app/api/volume`
+
+### Response
+
+```json5
+{
+  "updated_at": 1234567,              // UNIX timestamp
+  "data": {
+    "0x..._0x...": {                  // BEP20 token addresses, joined by an underscore
+      "base_volume": "...",           // last 24h volume denominated in token0
+      "quote_volume": "...",          // last 24h volume denominated in token1
+    },
+    // ...
+  }
+}
+```
