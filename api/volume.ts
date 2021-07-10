@@ -5,11 +5,8 @@ import { return200, return500 } from "../utils/response";
 
 interface ReturnShape {
   [tokenIds: string]: {
-    price: string;
     base_volume: string;
     quote_volume: string;
-    liquidity: string;
-    liquidity_BNB: string;
   };
 }
 
@@ -22,11 +19,8 @@ export default async function (req: VercelRequest, res: VercelResponse): Promise
       const t1Id = getAddress(pair.token1.id);
 
       accumulator[`${t0Id}_${t1Id}`] = {
-        price: pair.price,
         base_volume: pair.volumeToken0,
         quote_volume: pair.volumeToken1,
-        liquidity: pair.reserveUSD,
-        liquidity_BNB: pair.reserveBNB,
       };
 
       return accumulator;
